@@ -157,3 +157,10 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+function toggleCard(card) {
+  // Toggle the paragraph visibility inside the card
+  var paragraph = card.querySelector('p');
+  paragraph.style.display = (paragraph.style.display === 'none') ? 'block' : 'none';
+}
