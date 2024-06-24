@@ -986,43 +986,40 @@
         - #CONTACT
       -->
 
-        <article class="contact" data-page="contact">
-
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-        
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+      
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.6769114473855!2d72.80267981511848!3d19.417411586891237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a9828d9ea7c3%3A0x570a23e3dc5a5b50!2sNalasopara%2C%20Maharashtra%20401709%2C%20India!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
               width="400" height="300" loading="lazy"></iframe>
-            </figure>
-          </section>
-        
-          <section class="contact-form">
-        
-            <h3 class="h3 form-title">Contact Form</h3>
-        
-            <form action="./submit.html" class="form" data-form>
-        
-              <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-              </div>
-        
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-        
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-        
-            </form>
-        
-          </section>
-        
-        </article>
+          </figure>
+        </section>
+      
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+      
+          <form class="form" data-form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f1f9e5a6-7aa7-47c6-a70d-5ec13d50b402">
+      
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+      
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+      
         
 
     </div>

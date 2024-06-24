@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form Submission</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <h1>send message</h1>
+  <main class="container">
+    <section class="confirmation">
+      <?php if ($_GET['status'] == 'success'): ?>
+        <h2>Thank you for your message!</h2>
+        <p>Your message has been sent successfully. We will get back to you soon.</p>
+      <?php else: ?>
+        <h2>Oops! Something went wrong</h2>
+        <p>There was an error sending your message. Please try again later.</p>
+      <?php endif; ?>
+      <a href="index.html">Go back to the homepage</a>
+    </section>
+  </main>
 </body>
 </html>
